@@ -7,14 +7,22 @@
 #filter_list([1,'a','b',0,15]) == [1,0,15]
 #filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 
+newlst = []
 
 def filter_list(l):
-  rtn = []
   for item in l:
-    if item.isdecimal()
-      print(item)
+    if isinstance(item, int):
+      newlst.append(item)
+  print(newlst)
+  return newlst
 
-l = [1,2,'a','b']
 
-filter_list(l)
+
+
+ll = [1, 2, 'a', 'b']
+ll = [1,2,'aasf','1','123',123]
+
+
+filter_list(ll)
 #  'return a new list with the strings filtered out'
+
